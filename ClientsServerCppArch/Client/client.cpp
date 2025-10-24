@@ -3,7 +3,7 @@
 
 //TODO remplacer tout les printf par des std::cout
 
-Client::Client(const std::string& ip, uint32_t port) : _ip(ip), _port(port) {
+Client::Client(const std::string& ip, uint32_t port) : m_ipAddress(ip), m_clientPort(port) {
 
 	WSADATA wsData;
 	initSock();

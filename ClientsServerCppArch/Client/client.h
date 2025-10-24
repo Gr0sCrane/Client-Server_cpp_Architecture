@@ -5,6 +5,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+#define WIN32_LEAN_AND_MEAN
+
 #define DEFAULT_PORT "27015"
 #define DEFAULT_BUFLEN 512
 
@@ -22,13 +24,6 @@ class Client {
 private:
 	std::string m_ipAddress;
 	uint32_t m_clientPort;
-
-public:
-	Client(const std::string& ip, uint32_t port);
-	~Client();
-
-	void connectToServer();
-
 };
 
 void initSock();
