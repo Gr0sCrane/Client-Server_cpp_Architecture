@@ -127,11 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Common\IPEndpoint.cpp" />
     <ClCompile Include="Common\network.cpp" />
     <ClCompile Include="Common\socket.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Common\IPEndpoint.h" />
     <ClInclude Include="Common\network.h" />
     <ClInclude Include="Common\socket.h" />
   </ItemGroup>

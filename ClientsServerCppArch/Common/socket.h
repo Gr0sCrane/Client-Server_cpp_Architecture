@@ -13,7 +13,12 @@ namespace Net {
 
 	enum class IPVersion {
 		IPv4,
-		IPv6
+		IPv6,
+		Unknown
+	};
+
+	enum class SocketOption {
+		TCP_NoDelay,
 	};
 
 	class Socket {
@@ -29,5 +34,7 @@ namespace Net {
 	private:
 		IPVersion m_ipversion = IPVersion::IPv4;
 		SocketHandle m_handle = INVALID_SOCKET;
+
+		PResult setSocketOption(SocketOption option, BOOL value);
 	};
 }
