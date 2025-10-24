@@ -11,7 +11,7 @@ int main() {
 	if (Network::initialize()) {
 		std::cout << "WinSock: Success" << "\n";
 
-		IPEndpoint ipTest("192.168.10.5", 8080);
+		IPEndpoint ipTest("www.hello.com", 8080);
 		if (ipTest.getIpVers() == IPVersion::IPv4) {
 			std::cout << "Hostname: " << ipTest.getHostName() << "\n";
 			std::cout << "IP address: " << ipTest.getIpAddress() << "\n";
